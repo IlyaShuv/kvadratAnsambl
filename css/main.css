@@ -30,10 +30,6 @@ div{
 	box-sizing: border-box;
 }
 
-header {
-	height: 100vh;
-}
-
 .container {
 	width: 950px;
 	margin: 0 auto;
@@ -112,7 +108,7 @@ header {
 
 .dot {
 	position: absolute;
-	bottom: 2vh;
+	bottom: 4vh;
 	cursor: pointer;
 	height: 15px;
 	width: 15px;
@@ -151,3 +147,37 @@ header {
 	from{opacity: .4}
 	to{opacity: 1}
 }
+
+#stages {
+	padding-top: 40px;
+}
+
+#stages li {
+	display: block;
+	margin-left: 140px;
+}
+
+.stageIcon {
+	float: left;
+	font-size: 40px;
+	color: #FFCC00;
+	border: medium solid #FFCC00;
+	border-radius: 50%;
+	padding: 20px;
+}
+
+.arrow {
+	color: #FFCC00;
+	font-size: 40px;
+	margin-left: 26px;
+	margin-bottom: -24px;
+}
+
+#stages p {
+	text-align: left;
+	padding-left: 120px;
+	padding-top: 15px; 
+	font-size: 40px;
+}
+
+
