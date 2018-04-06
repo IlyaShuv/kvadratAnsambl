@@ -1,5 +1,27 @@
+@font-face { 
+	font-family: 'Gilroy'; 
+	src: url('../fonts/Gilroy-ExtraBold.eot'); 
+	src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), 
+	url('../fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Gilroy-ExtraBold.woff') format('woff'), 
+	url('../fonts/Gilroy-ExtraBold.ttf') format('truetype'); 
+	font-weight: 800; 
+	font-style: normal; 
+} 
+
+@font-face { 
+	font-family: 'Gilroy'; 
+	src: url('../fonts/Gilroy-Light.eot'); 
+	src: local('Gilroy Light'), local('Gilroy-Light'), 
+	url('../fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'), 
+	url('../fonts/Gilroy-Light.woff') format('woff'), 
+	url('../fonts/Gilroy-Light.ttf') format('truetype'); 
+	font-weight: 300; 
+	font-style: normal; 
+}
+
 body{
-	font-family: Roboto, Arial, sans-serif;
+	font-family: Gilroy, Arial, sans-serif;
 	padding: 0;
 	margin: 0;
 }
@@ -22,4 +44,110 @@ header {
 	display: table;
 	width: 100%;
 	clear: both;
+}
+
+.slideShow {
+	position: relative;
+	margin: auto;
+}
+
+.mySlides {
+	display: none;
+	text-align: center;
+}
+
+.mySlides img {
+	width: 100%;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	padding: 16px;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #F5F5F5;
+  font-size: 55px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 42%;
+  width: 100%;
+  text-align: center;
+}
+
+.button {
+	position: absolute;
+	display: inline-block;
+	width: 450px;
+	margin-left: -225px;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	color: rgba(0,0,0,1);
+	border: solid thin white;
+	background: white;
+	padding: 5px 30px;
+	border-radius: 35px;
+	bottom: 16%;
+}
+
+.dot {
+	position: absolute;
+	bottom: 2vh;
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #BBB;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+#dot1 {
+	margin-left: -20px;
+}
+
+#dot3 {
+	margin-left: 24px;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from{opacity: .4}
+	to{opacity: 1}
+}
+
+@keyframes fade {
+	from{opacity: .4}
+	to{opacity: 1}
 }
