@@ -1,0 +1,24 @@
+{
+  "name": "kvadrat1",
+  "version": "1.0.0",
+  "description": "kvadrat adult band",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlyaShuv/KvadratAnsambl.git"
+  },
+  "author": "ili_noise",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IlyaShuv/KvadratAnsambl/issues"
+  },
+  "homepage": "https://github.com/IlyaShuv/KvadratAnsambl#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
