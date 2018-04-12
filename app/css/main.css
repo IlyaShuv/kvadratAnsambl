@@ -250,6 +250,10 @@ h2 {
   text-align: center;
 }
 
+.information__text {
+  font-size: 25px;
+}
+
 footer {
   background: #FFCC00;
   padding-top: 90px;
