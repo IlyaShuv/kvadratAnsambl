@@ -301,3 +301,7 @@ footer {
   margin-top: 110px;
   color: #555;
 }
+
+.hidden {
+  visibility: hidden;
+}
