@@ -240,6 +240,18 @@ div {
   font-size: 25px;
 }
 
+#login {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #F2F2F2;
+}
+
+.registration__icons {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
 #information {
   padding-top: 50px;
   padding-bottom: 50px;

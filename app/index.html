@@ -92,19 +92,14 @@
 		</div>
 	</section>
 
-	<section id="form">
-		<div class="regForm container">
-			<form action="tele.php" method="POST">
-				<input class="regForm__input" type="text" name="userName" placeholder="Ваше имя" maxlength="100" required><br>
-				<input class="regForm__input" type="text" name="userPhone" placeholder="Ваш телефон" maxlength="12" required><br>
-				<input class="regForm__input" type="email" name="email" placeholder="E-mail" maxlength="100"><br>
-				<input class="regForm__input" type="password" name="password" placeholder="Пароль" maxlength="100"><br>
-				<div class="regForm__confirm"><input type="checkbox" name="checkBox" id="agree" value="yes">
-				  Отправляя сообщение, я принимаю пользовательское
-				  соглашение и подтверждаю, что ознакомлен и согласен 
-					с политикой конфиденциальности данного сайта</div>
-				<button class="regForm__butt" type="submit" id="continue">Регистрация</button>
-			</form>
+	<section id="login">
+		<div class="registration container">
+			<h2>Зарегистрируйтесь в один клик<br> с помощью аккаунта соц сети<br> или удобного Вам сервиса!</h2>
+			<script src="//ulogin.ru/js/ulogin.js"></script>
+			<div class="registration__icons" id="uLogin" data-ulogin="display=panel;
+			theme=flat;fields=first_name,last_name;providers=vkontakte,facebook,instagram,google,yandex;
+			redirect_uri=http%3A%2F%2Fband.kvadratsolo.ru%2Flogin.php;mobilebuttons=0;">
+			</div>
 		</div>
 	</section>
 

@@ -251,6 +251,25 @@ div{
 	}
 }
 
+#login {
+	padding: {
+		top: 50px;
+		bottom: 50px;
+	}
+	background: #F2F2F2;
+}
+
+.registration {
+	&__icons {
+		text-align: center;
+		padding: {
+			top: 10px;
+			bottom: 20px;
+		}
+	}
+
+}
+
 #information {
 	padding: {
 		top: 50px;
