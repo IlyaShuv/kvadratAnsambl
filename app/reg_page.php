@@ -1,0 +1,134 @@
+<?php session start();
+if(! isset ($_SESSION['user']))
+{
+	header("Location: index.html");
+	exit;
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ансамбль Квадрат Соло</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+	<script src="js/slider.js" defer></script>
+	<script src="js/confirm.js"></script>
+	<script src="js/scroll.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script> 
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script> 
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+	<script>
+		confirmCheck();
+		scrollAnimate();
+	</script>
+	<script> //футер 152фз
+	(function(){ 
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.async = true;
+		script.charset = 'utf-8';
+		script.src = 'https://152фз.рф/widget/9c68acb023b1697cc360f763ea1958e6';
+		document.getElementsByTagName('head')[0].appendChild(script);
+	})();
+	</script>
+
+	<header>
+
+		<div class="slideShow">
+
+			<div class="slide slide-fade">
+				<img src="slider/1.png" alt="слайд1">
+				<div class="slide__text">Играть в группе может каждый</div>
+				<a href=""><div class="slide__button">Мне интересно!</div></a>
+			</div>
+
+			<div class="slide slide-fade">
+				<img src="slider/2.png" alt="слайд2">
+				<div class="slide__text">Музыка для жизни</div>
+				<a href=""><div class="slide__button">Мне интересно!</div></a>
+			</div>
+
+			<div class="slide slide-fade">
+				<img src="slider/3.jpg" alt="слайд3">
+				<div class="slide__text">Будь успешным</div>
+				<a href=""><div class="slide__button">Мне интересно!</div></a>
+			</div>
+
+			<a class="slide__arrow slide__arrow-prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="slide__arrow slide__arrow-next" onclick="plusSlides(1)">&#10095;</a>
+
+			<div class="slide__dots">
+				<span class="slide__dot slide__dot-1" onclick="currentSlide(1)"></span>
+				<span class="slide__dot slide__dot-2" onclick="currentSlide(2)"></span>
+				<span class="slide__dot slide__dot-3" onclick="currentSlide(3)"></span>
+			</div>
+
+		</div>
+	</header>
+
+	<section id="stages">
+		<div class="container">
+			<ul class="stages clearfix mov hidden fadeIn">
+				<li class="stages__item">
+					<i class="fas fa-edit stages__icon"></i>
+					<p class="stages__text">Регистрация</p>
+				</li>
+				<li class="stages__item">
+					<i class="fas fa-arrow-down stages__arrow"></i>
+				</li>
+				<li class="stages__item">
+					<i class="fas fa-phone stages__icon"></i>
+					<p class="stages__text">Мы с Вами свяжемся</p>
+				</li>
+				<li class="stages__item">
+					<i class="fas fa-arrow-down stages__arrow"></i>
+				</li>
+				<li class="stages__item">
+					<i class="fas fa-music stages__icon"></i>
+					<p class="stages__text">Мы пригласим Вас как только наберется группа</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="login">
+		<div class="registration container">
+			<h2><?php echo "Спасибо за регистрацию, " . $_SESSION['user']['first_name'] . "! Как только группа наберётся, мы с Вами свяжемся!";?></h2>
+		</div>
+	</section>
+
+	<section id="information">
+		<div class="container mov hidden fadeIn">
+			<h2>Дополнительная информация</h2>
+				<p class="information__text">//Будет здесь..</p>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="contacts">
+				<p class="contacts__phone">+7 903 7947169</p>
+				<p class="contacts__email">info@kvadratsolo.ru</p>
+				<div class="contacts__links">
+					<a class="contacts__link contacts__link-fb" href="https://www.facebook.com/kvadratsolo"><i class="fab fa-facebook-f"></i></a>
+					<a class="contacts__link contacts__link-vk" href="https://vk.com/kvadratsolo"><i class="fab fa-vk"></i></a>
+					<a class="contacts__link contacts__link-yt" href="https://www.youtube.com/user/mstudio1329"><i class="fab fa-youtube"></i></a>
+					<a class="contacts__link contacts__link-inst" href="https://www.instagram.com/kvadratsolo/"><i class="fab fa-instagram"></i></a>
+				</div>
+				<p class="contacts__copyright">Социально-образовательный проект "Квадрат Соло" 2012-2018 ©</p>
+			</div>
+			<div id="fz_wrap"></div>
+		</div>
+	</footer>
+
+</body>
+</html>
