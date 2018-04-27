@@ -1,4 +1,4 @@
-<?php session start();         
+<?php session_start();         
   $s = file_get_contents('http://ulogin.ru/token.php?token=' . $_POST['token'] . '&host=' . $_SERVER['HTTP_HOST']);
   $user = json_decode($s, true);
   //$user['network'] - соц. сеть, через которую авторизовался пользователь

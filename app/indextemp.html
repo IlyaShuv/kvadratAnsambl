@@ -1,11 +1,3 @@
-<?php session_start();
-if(! isset ($_SESSION['user']))
-{
-	header("Location: indextemp.html");
-	exit;
-}
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -102,7 +94,12 @@ if(! isset ($_SESSION['user']))
 
 	<section id="login">
 		<div class="registration container">
-			<h2><?php echo "Спасибо за регистрацию, " . $_SESSION['user']['first_name'] . "! Как только группа наберётся, мы с Вами свяжемся!";?></h2>
+			<h2>Зарегистрируйтесь в один клик<br> с помощью аккаунта соц сети<br> или удобного Вам сервиса!</h2>
+			<script src="//ulogin.ru/js/ulogin.js"></script>
+			<div class="registration__icons" id="uLogin" data-ulogin="display=panel;
+			theme=flat;fields=first_name,last_name;providers=vkontakte,facebook,instagram,google,yandex;
+			redirect_uri=http%3A%2F%2Fband.kvadratsolo.ru%2Flogin.php;mobilebuttons=0;">
+			</div>
 		</div>
 	</section>
 
