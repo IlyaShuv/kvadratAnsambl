@@ -65,7 +65,7 @@ div{
 	&__text {
 		color: #F5F5F5;
   	font-size: 55px;
-  	font-weight: bold;
+  	font-weight: 800;
   	padding: 8px 12px;
   	position: absolute;
   	bottom: 42%;
@@ -74,19 +74,19 @@ div{
 	}
 
 	&__button {
-		position: absolute;
+		position: relative;
 		display: inline-block;
 		width: 450px;
-		margin-left: -225px;
 		text-align: center;
 		font-size: 50px;
-		font-weight: bold;
-		color: rgba(0,0,0,1);
+		font-weight: 800;
+		color: black;
 		border: solid thin white;
 		background: white;
 		padding: 5px 30px;
 		border-radius: 35px;
-		bottom: 16%;
+		/*bottom: 16%;*/
+		top: -215px;
 	}
 
 	&__arrow {
@@ -96,7 +96,7 @@ div{
 		width: auto;
 		margin-top: -22px;
 		color: white;
-		font-weight: bold;
+		font-weight: 800;
 		padding: 16px;
 		font-size: 18px;
 		transition: 0.6s ease;
@@ -113,7 +113,9 @@ div{
 	}
 	
 	&__dots {
+		position: relative;
 		text-align: center;
+		top: -84px;
 	}
 
 
@@ -158,6 +160,20 @@ div{
 	to{opacity: 1}
 }
 
+#mainDescript {
+	background: #F2F2F2;
+	padding: {
+		top: 26px;
+		bottom: 26px;
+	}
+	margin-top: -78px;
+}
+
+.mainDescript__text {
+	font-size: 40px;
+	font-weight: 300;
+}
+
 #stages {
 	padding-top: 40px;
 }
@@ -169,8 +185,12 @@ div{
 	}
 	&__icon {
 		float: left;
+		width: 90px;
+		height: 90px;
 		font-size: 40px;
 		color: #FFCC00;
+		text-align: center;
+		vertical-align: middle;
 		border: medium solid #FFCC00;
 		border-radius: 50%;
 		padding: 20px;
@@ -301,42 +321,33 @@ footer {
 
 	&__phone {
 		font-size: 34px;
-		font-weight: bold;
+		font-weight: 800;
 		margin-bottom: 0;
 	}
 
 	&__email {
 		font-size: 34px;
-		font-weight: bold;
+		font-weight: 800;
 		margin-top: 0;
 	}
 
 	&__link {
+		display: inline-block;
 		font-size: 18px;
-		color: #FFCC00;
 		border: black solid thin;
 		border-radius: 50%;
-		padding: 5px;
+		width: 35px;
+		height: 35px;
+		padding: 7px;
 		background: black;
 		margin: {
 			left: 2px;
 			right: 2px;
 		}
 
-		&-fb {
-			padding: {
-				right: 10px;
-				left: 10px;
-			}
+		& a {
+			color: #FFCC00;
 		}
-
-		&-inst {
-			padding: {
-				right: 7px;
-				left: 7px;
-			}
-		}
-
 	}
 
 	&__copyright {

@@ -16,13 +16,16 @@
   $first_name = $user['first_name'];
   $last_name = $user['last_name'];
 
+  $d = getdate();
+  $login_date = "$d[year].$d[mon].$d[mday] $d[hours]:$d[minutes]";
+
   if (isset($user))
   {
   	#Соединение с БД
   	$db = mysql_connect("localhost", "i40232_ksoloband", "2018ksoloband");
   	mysql_select_db("i40232_ksoloband", $db);
 
-  	mysql_query("INSERT INTO people (first_name, last_name, network, identity) VALUES ('$first_name','$last_name','$network','$identity')");
+  	mysql_query("INSERT INTO people (first_name, last_name, network, identity, login_date) VALUES ('$first_name','$last_name','$network','$identity', '$login_date')");
 
 
 
