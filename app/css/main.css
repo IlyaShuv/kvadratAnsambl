@@ -80,7 +80,6 @@ div {
   background: white;
   padding: 5px 30px;
   border-radius: 35px;
-  /*bottom: 16%;*/
   top: -215px;
 }
 
@@ -188,7 +187,6 @@ div {
   font-size: 40px;
   color: #FFCC00;
   text-align: center;
-  vertical-align: middle;
   border: medium solid #FFCC00;
   border-radius: 50%;
   padding: 20px;
@@ -199,6 +197,7 @@ div {
   font-size: 40px;
   margin-left: 26px;
   margin-bottom: -24px;
+  margin-top: 0;
 }
 
 .stages__text {
@@ -206,56 +205,6 @@ div {
   padding-left: 120px;
   padding-top: 15px;
   font-size: 40px;
-}
-
-#form {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background: #F2F2F2;
-}
-
-.regForm__input {
-  margin-top: 20px;
-  margin-left: 170px;
-  width: 580px;
-  padding: 10px;
-  font-size: 25px;
-  border-color: #222222;
-}
-
-.regForm__confirm {
-  border: #FFCC00 solid medium;
-  background: white;
-  border-radius: 20px;
-  margin-top: 20px;
-  margin-left: 170px;
-  width: 605px;
-  padding: 10px;
-  font-size: 19px;
-  color: #333;
-  text-align: center;
-}
-
-.regForm__butt {
-  margin-top: 40px;
-  margin-left: 330px;
-  border: #121212 medium solid;
-  border-radius: 24px;
-  background: #FFCC00;
-  width: 300px;
-  padding: 10px;
-  font-size: 25px;
-}
-
-.regForm__butt:disabled {
-  margin-top: 40px;
-  margin-left: 330px;
-  background: #EEE;
-  border-color: #CCC;
-  color: #CCC;
-  width: 300px;
-  padding: 10px;
-  font-size: 25px;
 }
 
 #login {
