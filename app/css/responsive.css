@@ -1,0 +1,81 @@
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 750px;
+  }
+  .slide__button {
+    top: -168px;
+  }
+  .stages__item {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 320px;
+  }
+  .slide__button {
+    display: none;
+  }
+  .slide__text {
+    font-size: 40px;
+    bottom: 25%;
+  }
+  .slide__dots {
+    position: relative;
+    text-align: center;
+    top: 0;
+  }
+  #mainDescript {
+    margin-top: -5px;
+  }
+  .mainDescript__text {
+    font-size: 35px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .stages {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .stages__item {
+    margin-left: 10px;
+  }
+  .stages__icon {
+    width: 62px;
+    height: 62px;
+    font-size: 24px;
+    padding: 14px;
+  }
+  .stages__arrow {
+    font-size: 30px;
+    margin-bottom: -12px;
+    margin-left: 20px;
+  }
+  .stages__text {
+    font-size: 24px;
+    padding-left: 65px;
+    padding-top: 15px;
+  }
+  #login {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .registration h2 {
+    font-size: 32px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .information h2 {
+    font-size: 35px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .information p {
+    font-size: 26px;
+  }
+  #information {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}
