@@ -11,8 +11,10 @@ if(! isset ($_SESSION['user']))
 <head>
 	<title>Ансамбль Квадрат Соло</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css?v15092">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
@@ -47,20 +49,20 @@ if(! isset ($_SESSION['user']))
 
 			<div class="slide slide-fade">
 				<img src="slider/1.png" alt="слайд1">
-				<div class="slide__text">Играть в группе может каждый</div>
-				<a href=""><div class="slide__button">Мне интересно!</div></a>
+				<div class="slide__text">Игра в группе как уникальный опыт в жизни</div>
+				<a href="#login"><div class="slide__button">Мне интересно!</div></a>
 			</div>
 
 			<div class="slide slide-fade">
 				<img src="slider/2.png" alt="слайд2">
-				<div class="slide__text">Музыка для жизни</div>
-				<a href=""><div class="slide__button">Мне интересно!</div></a>
+				<div class="slide__text">Успех в жизни через творчество</div>
+				<a href="#login"><div class="slide__button">Мне интересно!</div></a>
 			</div>
 
 			<div class="slide slide-fade">
 				<img src="slider/3.jpg" alt="слайд3">
-				<div class="slide__text">Будь успешным</div>
-				<a href=""><div class="slide__button">Мне интересно!</div></a>
+				<div class="slide__text">Общение и яркие эмоции</div>
+				<a href="#login"><div class="slide__button">Мне интересно!</div></a>
 			</div>
 
 			<a class="slide__arrow slide__arrow-prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -75,26 +77,40 @@ if(! isset ($_SESSION['user']))
 		</div>
 	</header>
 
+	<section id="mainDescript">
+		<div class="container">
+			<h2 class="mainDescript__title">Ансамбли Квадрат Соло - музыкальные коллективы,
+				в которых может играть каждый, без ограничений по возрасту и уровню игры</h2>
+				<p class="mainDescript__text">Мы объединяем желающих играть музыку в группы по 4 - 8 человек.
+				С каждой группой работает профессиональный музыкант - наставник, который помогает организовать
+			  творческий процесс и выстроить взаимодействие. За короткий срок каждая группа сможет
+		    получить уникальный опыт выступления на сцене.</p>
+		</div>
+	</section>
+
 	<section id="stages">
 		<div class="container">
 			<ul class="stages clearfix mov hidden fadeIn">
 				<li class="stages__item">
-					<i class="fas fa-edit stages__icon"></i>
-					<p class="stages__text">Регистрация</p>
+					<div class="stages__icon"><i class="fas fa-edit"></i></div>
+					<p class="stages__title">Регистрация</p>
+					<p class="stages__text">Вход в один клик через соцсеть</p>
 				</li>
 				<li class="stages__item">
 					<i class="fas fa-arrow-down stages__arrow"></i>
 				</li>
 				<li class="stages__item">
-					<i class="fas fa-phone stages__icon"></i>
-					<p class="stages__text">Мы с Вами свяжемся</p>
+					<div class="stages__icon"><i class="fas fa-phone"></i></div>
+					<p class="stages__title">Связываемся с Вами</p>
+					<p class="stages__text">Уточняем пожелания, музыкальный опыт...</p>
 				</li>
 				<li class="stages__item">
 					<i class="fas fa-arrow-down stages__arrow"></i>
 				</li>
 				<li class="stages__item">
-					<i class="fas fa-music stages__icon"></i>
-					<p class="stages__text">Мы пригласим Вас как только наберется группа</p>
+					<div class="stages__icon"><i class="fas fa-music"></i></div>
+					<p class="stages__title">Приглашаем на репетицию</p>
+					<p class="stages__text">В удобное время на профессионально оборудованную базу, как только набирается подходящая группа</p>
 				</li>
 			</ul>
 		</div>
@@ -106,23 +122,16 @@ if(! isset ($_SESSION['user']))
 		</div>
 	</section>
 
-	<section id="information">
-		<div class="container mov hidden fadeIn">
-			<h2>Дополнительная информация</h2>
-				<p class="information__text">//Будет здесь..</p>
-		</div>
-	</section>
-
-	<footer>
+<footer>
 		<div class="container">
 			<div class="contacts">
 				<p class="contacts__phone">+7 903 7947169</p>
 				<p class="contacts__email">info@kvadratsolo.ru</p>
 				<div class="contacts__links">
-					<a class="contacts__link contacts__link-fb" href="https://www.facebook.com/kvadratsolo"><i class="fab fa-facebook-f"></i></a>
-					<a class="contacts__link contacts__link-vk" href="https://vk.com/kvadratsolo"><i class="fab fa-vk"></i></a>
-					<a class="contacts__link contacts__link-yt" href="https://www.youtube.com/user/mstudio1329"><i class="fab fa-youtube"></i></a>
-					<a class="contacts__link contacts__link-inst" href="https://www.instagram.com/kvadratsolo/"><i class="fab fa-instagram"></i></a>
+					<div class="contacts__link"><a href="https://www.facebook.com/kvadratsolo"><i class="fab fa-facebook-f"></i></a></div>
+					<div class="contacts__link"><a href="https://vk.com/kvadratsolo"><i class="fab fa-vk"></i></a></div>
+					<div class="contacts__link"><a href="https://www.youtube.com/user/mstudio1329"><i class="fab fa-youtube"></i></a></div>
+					<div class="contacts__link"><a href="https://www.instagram.com/kvadratsolo/"><i class="fab fa-instagram"></i></a></div>
 				</div>
 				<p class="contacts__copyright">Социально-образовательный проект "Квадрат Соло" 2012-2018 ©</p>
 			</div>

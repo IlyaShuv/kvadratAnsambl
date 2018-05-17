@@ -66,9 +66,11 @@ div{
 		color: #F5F5F5;
   	font-size: 55px;
   	font-weight: 800;
+  	border: thin solid rgba(0, 0, 0, 0.5);
+  	background-color: rgba(0, 0, 0, 0.5);
   	padding: 8px 12px;
   	position: absolute;
-  	bottom: 42%;
+  	bottom: 50%;
   	width: 100%;
   	text-align: center;
 	}
@@ -76,22 +78,28 @@ div{
 	&__button {
 		position: relative;
 		display: inline-block;
-		width: 450px;
+		width: 500px;
 		text-align: center;
 		font-size: 50px;
 		font-weight: 800;
 		color: black;
-		border: solid thin white;
-		background: white;
-		padding: 5px 30px;
-		border-radius: 35px;
-		top: -215px;
+		border: solid thin #FFCC00;
+		background: #FFCC00;
+		box-shadow: 0 0 12px 6px black;
+		padding: {
+			top: 20px;
+			bottom: 20px;
+			right: 8px;
+			left: 8px;
+		}
+		border-radius: 28px;
+		top: -240px;
 	}
 
 	&__arrow {
 		cursor: pointer;
 		position: absolute;
-		top: 50%;
+		top: 40%;
 		width: auto;
 		margin-top: -22px;
 		color: white;
@@ -114,7 +122,7 @@ div{
 	&__dots {
 		position: relative;
 		text-align: center;
-		top: -84px;
+		top: -120px;
 	}
 
 
@@ -165,12 +173,19 @@ div{
 		top: 26px;
 		bottom: 26px;
 	}
-	margin-top: -78px;
+	margin-top: -108px;
 }
 
-.mainDescript__text {
-	font-size: 40px;
-	font-weight: 300;
+.mainDescript {
+	&__text {
+		font-size: 28px;
+		font-weight: 300;
+		text-align:center;
+	}
+	&__title {	
+		font-size: 42px;
+		text-align: center;
+	}
 }
 
 #stages {
@@ -186,32 +201,41 @@ div{
 		float: left;
 		width: 90px;
 		height: 90px;
-		font-size: 40px;
+		font-size: 70px;
 		color: #FFCC00;
 		text-align: center;
-		border: medium solid #FFCC00;
+		/*border: medium solid #FFCC00;*/
 		border-radius: 50%;
 		padding: 20px;
 	}
 	&__arrow {
 		color: #FFCC00;
-		font-size: 40px;
-		margin-left: 26px;
+		font-size: 35px;
+		margin-left: 38px;
 		margin-bottom: -24px;
 		margin-top: 0;
 	}
-	&__text {
+	&__title {
 		text-align: left;
+		font-weight: 800;
 		padding-left: 120px;
 		padding-top: 15px; 
-		font-size: 40px;
+		font-size: 37px;
+		margin-bottom: 0;
+	}
+	&__text {
+		width: 600px;
+		margin-top: 16px;
+		text-align: left;
+		padding-left: 120px;
+		font-size: 24px;
 	}
 }
 
 #login {
 	padding: {
-		top: 50px;
-		bottom: 50px;
+		top: 60px;
+		bottom: 60px;
 	}
 	background: #F2F2F2;
 }
@@ -224,25 +248,11 @@ div{
 			bottom: 20px;
 		}
 	}
-
-}
-
-#information {
-	padding: {
-		top: 50px;
-		bottom: 50px;
+	&__title {
+		font-size: 45px;
+		text-align: center;
 	}
-}
 
-h2 {
-	font-size: 40px;
-	text-align: center;
-}
-
-.information {
-	&__text {
-		font-size: 25px;
-	}
 }
 
 footer {
